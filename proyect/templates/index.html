@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+   
+<button type="button" onclick="loadDoc()">Change Content</button>
+
+<script>
+        function loadDoc() {
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              console.log(this.responseText);
+            }
+          };
+
+          var gbifID = "7"
+          var family = "1"
+          xhttp.open("GET", "api?gbifID="+gbifID+"&family="+family, true);
+          xhttp.send();
+        }
+</script>
+</body>
+</html>

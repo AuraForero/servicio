@@ -1,0 +1,16 @@
+numpy 
+pandas 
+sklearn
+matplotlib
+seaborn
+jupyter
+pyyaml
+h5py 
+requests 
+six 
+scipy 
+Flask==0.11.1
+gevent 
+gunicorn 
+h5py
+elasticsearch
