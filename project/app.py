@@ -1,5 +1,7 @@
 from flask import Flask, render_template,request
 import os
+from elasticsearch import Elasticsearch
+from elasticsearch import helpers
 
 app = Flask(__name__)
 
