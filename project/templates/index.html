@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
 <body>
-   
+
+<form name="myForm" onsubmit="validateForm()">
+    Name: 
+    <input type="text" name="val1">
+    <input type="text" name="val2">
+    <input type="submit" value="Submit">
+</form>
+    
+
 <button type="button" onclick="loadDoc()">Change Content</button>
 
 <script>
@@ -17,7 +25,7 @@
           var family = "1"
           xhttp.open("GET", "api?gbifID="+gbifID+"&family="+family, true);
           xhttp.send();
-        }
+        }/**/
 </script>
 </body>
 </html>
